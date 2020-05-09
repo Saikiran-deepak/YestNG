@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="classes">
+  <test thread-count="3" name="Test" parallel="classes">
+  
+   <parameter name="Email" value="Kiran10114444@gmail.com"></parameter>
+  <parameter name="Password" value="Saikiran@800"></parameter>
+    <parameter name="Coupon" value="AH456"></parameter>
+  
+  <parameter name="url" value="https://www.myntra.com/login/password?referer=https%3A%2F%2Fwww.myntra.com"></parameter>
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      
+      <class name="com.capgemini.myntra.test.MyntraInsiderSeeMore"/>
+ 
+    
+    </classes>
+  
+  
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
